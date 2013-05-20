@@ -1,0 +1,31 @@
+{
+	"name": "docpad-plugin-ignoreincludes",
+	"version": "2.0.1",
+	"description": "DocPad plugin that disables writing to the /out dir for .inc.* files",
+	"homepage": "https://github.com/rantecki/docpad-plugin-ignoreincludes",
+	"keywords": [
+		"docpad",
+		"docpad-plugin",
+		"stylus",
+		"less"
+	],
+	"author": "Richard Antecki <richard@antecki.id.au> (richard.antecki.id.au)",
+	"bugs": {
+		"url": "https://github.com/rantecki/docpad-plugin-ignoreincludes/issues"
+	},
+	"repository" : {
+		"type": "git",
+		"url": "http://github.com/rantecki/docpad-plugin-ignoreincludes.git"
+	},
+	"engines" : {
+		"node": ">=0.4",
+		"docpad": ">=6.1 <7"
+	},
+	"devDependencies": {
+		"coffee-script": "~1.4.0"
+	},
+	"main": "./out/ignoreincludes.plugin.js",
+	"scripts": {
+		"prepublish": "cake compile"
+	}
+}
