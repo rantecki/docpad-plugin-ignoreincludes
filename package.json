@@ -1,6 +1,6 @@
 {
 	"name": "docpad-plugin-ignoreincludes",
-	"version": "2.0.1",
+	"version": "2.0.0",
 	"description": "DocPad plugin that disables writing to the /out dir for .inc.* files",
 	"homepage": "https://github.com/rantecki/docpad-plugin-ignoreincludes",
 	"keywords": [
