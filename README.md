@@ -16,6 +16,14 @@ See [here](http://richard.antecki.id.au/posts/2013/05/ignoring-extensions-docpad
 
 Any files with an extension matching `.inc.*` will not be written to the `/out` directory.
 
+You can also customise which output extensions are to be ignored via the `ignoreExtensions` config option. E.g.
+
+```
+plugins:
+	ignoreincludes:
+		ignoreExtensions: ['inc', 'abc']
+```
+
 ### Stylus @import Example
 
 Rename your stylus include files with a `.inc.styl` extension.  Then import them into your main stylesheet. E.g.
