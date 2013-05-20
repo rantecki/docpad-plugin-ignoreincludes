@@ -1,6 +1,6 @@
 module.exports = (BasePlugin) ->
 	class IgnoreIncludes extends BasePlugin
-		name: 'ignore-includes'
+		name: 'ignoreincludes'
 
 		config:
 			ignoredExtensions: ['inc']
