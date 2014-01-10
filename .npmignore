@@ -2,6 +2,6 @@
 Makefile
 Cakefile
 *~
-src/
+#src/
 out/test/
 test/

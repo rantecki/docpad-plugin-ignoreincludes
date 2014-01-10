@@ -26,6 +26,7 @@
 	},
 	"main": "./out/ignoreincludes.plugin.js",
 	"scripts": {
-		"prepublish": "cake compile"
+		"prepublish": "cake compile",
+	    "preinstall": "[ -e ./out/ignoreincludes.plugin.js ] || (which coffee && coffee -bco ./out/ ./src/) || true"
 	}
 }
