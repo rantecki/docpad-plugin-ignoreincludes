@@ -1,32 +1,44 @@
 {
-	"name": "docpad-plugin-ignoreincludes",
-	"version": "2.0.0",
-	"description": "DocPad plugin that disables writing to the /out dir for .inc.* files",
-	"homepage": "https://github.com/rantecki/docpad-plugin-ignoreincludes",
-	"keywords": [
-		"docpad",
-		"docpad-plugin",
-		"stylus",
-		"less"
-	],
-	"author": "Richard Antecki <richard@antecki.id.au> (richard.antecki.id.au)",
-	"bugs": {
-		"url": "https://github.com/rantecki/docpad-plugin-ignoreincludes/issues"
-	},
-	"repository" : {
-		"type": "git",
-		"url": "https://github.com/rantecki/docpad-plugin-ignoreincludes.git"
-	},
-	"engines" : {
-		"node": ">=0.4",
-		"docpad": ">=6.1 <7"
-	},
-	"devDependencies": {
-		"coffee-script": "~1.4.0"
-	},
-	"main": "./out/ignoreincludes.plugin.js",
-	"scripts": {
-		"prepublish": "cake compile",
-	    "preinstall": "[ -e ./out/ignoreincludes.plugin.js ] || (which coffee && coffee -bco ./out/ ./src/) || true"
-	}
+  "title": "Ignore-Includes Plugin for DocPad",
+  "name": "docpad-plugin-ignoreincludes",
+  "version": "2.1.0",
+  "description": "DocPad plugin that disables writing to the /out dir for .inc.* files",
+  "homepage": "https://github.com/rantecki/docpad-plugin-ignoreincludes",
+  "keywords": [
+    "docpad",
+    "docpad-plugin",
+    "stylus",
+    "less"
+  ],
+  "author": "Richard Antecki <richard@antecki.id.au> (richard.antecki.id.au)",
+  "bugs": {
+    "url": "https://github.com/rantecki/docpad-plugin-ignoreincludes/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rantecki/docpad-plugin-ignoreincludes.git"
+  },
+  "engines": {
+    "node": ">=0.4",
+    "docpad": ">=6.1 <7"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.7.1",
+    "joe": "~1.3.2",
+    "docpad": ">=6.37 <7",
+    "projectz": "~0.3.9"
+  },
+  "scripts": {
+    "test": "node ./out/test/ignoreincludes.test.js"
+  },
+  "main": "./out/lib/ignoreincludes.plugin.js",
+  "maintainers": [
+    ""
+  ],
+  "contributors": [
+    "rantecki (https://github.com/rantecki)"
+  ],
+  "license": {
+    "type": "MIT"
+  }
 }
