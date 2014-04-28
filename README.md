@@ -1,4 +1,3 @@
-
 <!-- TITLE/ -->
 
 # Ignore-Includes Plugin for DocPad
@@ -43,7 +42,7 @@ You can also customise which output extensions are to be ignored via the `ignore
 ```
 plugins:
 	ignoreincludes:
-		ignoreExtensions: ['inc', 'abc']
+		ignoredExtensions: ['inc', 'abc']
 ```
 
 ### Stylus @import Example
